@@ -1,12 +1,8 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
 import datetime, time, asyncio
 from pyrogram import Client, filters
 from database.users_chats_db import db
-from info import ADMINS
-from utils import broadcast_messages, broadcast_messages_group
+from Vijay import ADMINS
+from Vijay.utils import broadcast_messages, broadcast_messages_group
         
 @Client.on_message(filters.command("broadcast") & filters.user(ADMINS))
 async def pm_broadcast(bot, message):

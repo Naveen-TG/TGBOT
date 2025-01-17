@@ -95,7 +95,7 @@
 <br>
 <br>
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Viratdhinesh-18/TGBOT&branch=main&name=TGBOT)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/Naveen-TG/TGBOT&branch=main&name=tgbot)
 </details>
 
 <details><summary><b>Deploy To Render</b></summary>

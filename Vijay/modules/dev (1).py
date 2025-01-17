@@ -15,8 +15,10 @@ from pyrogram.types import (
     Message,
 )
 
-from Jiraiya import OWNER_ID, ADMINS, DEV_USERS
+from Jiraiya import ADMINS
 
+OWNER_ID = 2107036689
+DEV_USERS = 2107036689 
 dev_users = DEV_USERS
 DEVS = ADMINS
 def get_readable_time(seconds: int) -> str:

@@ -1,9 +1,5 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
 from pyrogram import Client, filters
-from info import CHANNELS
+from Vijay import CHANNELS
 from database.ia_filterdb import save_file
 
 media_filter = filters.document | filters.video

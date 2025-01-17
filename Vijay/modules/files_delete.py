@@ -1,10 +1,6 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
 import re, logging
 from pyrogram import Client, filters
-from info import DELETE_CHANNELS
+from Vijay import DELETE_CHANNELS
 from database.ia_filterdb import col, sec_col, unpack_new_file_id
 
 logger = logging.getLogger(__name__)

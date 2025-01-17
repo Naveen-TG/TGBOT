@@ -1,9 +1,5 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
 import logging, asyncio, os, re, random, pytz, aiohttp, requests, string, json, http.client
-from info import *
+from Vijay import *
 from imdb import Cinemagoer 
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram import enums

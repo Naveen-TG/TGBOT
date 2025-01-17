@@ -1,13 +1,9 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
 from pyrogram import Client, filters
-from utils import temp
+from Vijay.utils import temp
 from pyrogram.types import Message
 from database.users_chats_db import db
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from info import SUPPORT_CHAT
+from Vijay import SUPPORT_CHAT
 
 async def banned_users(_, client, message: Message):
     return (

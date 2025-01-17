@@ -9,36 +9,36 @@ logging.getLogger("cinemagoer").setLevel(logging.ERROR)
 
 from pyrogram import Client, idle
 from database.users_chats_db import db
-from info import *
-from utils import temp
+from Vijay import *
+from Vijay.utils import temp
 from typing import Union, Optional, AsyncGenerator
 from Script import script 
 from datetime import date, datetime 
 from aiohttp import web
-from plugins import web_server
+from Vijay.modules import web_server
 from Vijay.modules.clone import restart_bots
 
-from TechVJ.bot import TechVJBot
-from TechVJ.util.keepalive import ping_server
-from TechVJ.bot.clients import initialize_clients
+from Naveen.bot import Naveen
+from Naveen.util.keepalive import ping_server
+from Naveen.bot.clients import initialize_clients
 
 ppath = "Vijay/modules/*.py"
 files = glob.glob(ppath)
-TechVJBot.start()
+Naveen.start()
 loop = asyncio.get_event_loop()
 
 
 async def start():
     print('\n')
     print('Initalizing Your Bot')
-    bot_info = await TechVJBot.get_me()
+    bot_info = await Naveen.get_me()
     await initialize_clients()
     for name in files:
         with open(name) as a:
             patt = Path(a.name)
             plugin_name = patt.stem.replace(".py", "")
-            plugins_dir = Path(f"plugins/{plugin_name}.py")
-            import_path = "plugins.{}".format(plugin_name)
+            plugins_dir = Path(f"Vijay/modules/{plugin_name}.py")
+            import_path = "Vijay/modules/.{}".format(plugin_name)
             spec = importlib.util.spec_from_file_location(import_path, plugins_dir)
             load = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(load)
@@ -49,8 +49,8 @@ async def start():
     b_users, b_chats = await db.get_banned()
     temp.BANNED_USERS = b_users
     temp.BANNED_CHATS = b_chats
-    me = await TechVJBot.get_me()
-    temp.BOT = TechVJBot
+    me = await Naveen.get_me()
+    temp.BOT = Naveen
     temp.ME = me.id
     temp.U_NAME = me.username
     temp.B_NAME = me.first_name
@@ -60,17 +60,17 @@ async def start():
     now = datetime.now(tz)
     time = now.strftime("%H:%M:%S %p")
     try:
-        await TechVJBot.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
+        await Naveen.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
     except:
         print("Make Your Bot Admin In Log Channel With Full Rights")
     for ch in CHANNELS:
         try:
-            k = TechVJBot.send_message(chat_id=ch, text="**Bot Restarted**")
+            k = Naveen.send_message(chat_id=ch, text="**Bot Restarted**")
             await k.delete()
         except:
             print("Make Your Bot Admin In File Channels With Full Rights")
     try:
-        k = await TechVJBot.send_message(chat_id=AUTH_CHANNEL, text="**Bot Restarted**")
+        k = await Naveen.send_message(chat_id=AUTH_CHANNEL, text="**Bot Restarted**")
         await k.delete()
     except:
         print("Make Your Bot Admin In Force Subscribe Channel With Full Rights")

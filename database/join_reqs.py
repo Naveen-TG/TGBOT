@@ -1,5 +1,5 @@
 import motor.motor_asyncio
-from info import AUTH_CHANNEL, OTHER_DB_URI
+from Vijay import AUTH_CHANNEL, OTHER_DB_URI
 
 class JoinReqs:
 

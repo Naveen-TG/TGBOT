@@ -2,7 +2,7 @@ import asyncio, logging
 from Vijay import *
 from pyrogram import Client
 from Naveen.util.config_parser import TokenParser
-from . import multi_clients, work_loads, TechVJBot
+from . import multi_clients, work_loads, Naveen as TechVJBot
 
 
 async def initialize_clients():

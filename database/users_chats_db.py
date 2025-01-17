@@ -1,4 +1,5 @@
-import re, time, datetimefrom pymongo.errors import DuplicateKeyError
+import re, time, datetime
+from pymongo.errors import DuplicateKeyError
 import motor.motor_asyncio
 from pymongo import MongoClient
 

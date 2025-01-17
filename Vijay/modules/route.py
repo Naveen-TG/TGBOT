@@ -2,7 +2,7 @@ import re, math, logging, secrets, mimetypes, time
 from Vijay import *
 from aiohttp import web
 from aiohttp.http_exceptions import BadStatusLine
-from Naveen.bot import multi_clients, work_loads, TechVJBot
+from Naveen.bot import multi_clients, work_loads, Naveen as TechVJBot
 from Naveen.server.exceptions import FIleNotFound, InvalidHash
 from Naveen import StartTime, __version__
 from Naveen.util.custom_dl import ByteStreamer

@@ -1,12 +1,8 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
 import re, os, json, base64, logging
-from utils import temp
+from Vijay.utils import temp
 from pyrogram import filters, Client, enums
 from pyrogram.errors.exceptions.bad_request_400 import ChannelInvalid, UsernameInvalid, UsernameNotModified
-from info import ADMINS, LOG_CHANNEL, FILE_STORE_CHANNEL, PUBLIC_FILE_STORE
+from Vijay import ADMINS, LOG_CHANNEL, FILE_STORE_CHANNEL, PUBLIC_FILE_STORE
 from database.ia_filterdb import unpack_new_file_id
 
 logger = logging.getLogger(__name__)

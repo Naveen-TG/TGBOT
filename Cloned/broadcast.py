@@ -1,14 +1,10 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
 
-# Clone Code Credit : YT - @Tech_VJ / TG - @VJ_Bots / GitHub - @VJBots
 
 import datetime, time, asyncio
 from pyrogram import Client, filters
 from database.users_chats_db import db
 from pyrogram.errors import *
-from CloneTechVJ.database.clone_bot_userdb import clonedb
+from Cloned.database.clone_bot_userdb import clonedb
         
 @Client.on_message(filters.command("broadcast"))
 async def pm_broadcast(bot, message):

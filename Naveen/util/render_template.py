@@ -1,7 +1,7 @@
 import jinja2, aiohttp, logging, urllib.parse
 
 from Vijay import *
-from Naveen.bot import TechVJBot
+from Naveen.bot import Naveen as TechVJBot
 from Naveen.util.human_readable import humanbytes
 from Naveen.util.file_properties import get_file_ids
 from Naveen.server.exceptions import InvalidHash 

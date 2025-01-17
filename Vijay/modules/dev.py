@@ -15,7 +15,7 @@ from pyrogram.types import (
     Message,
 )
 
-from Jiraiya import ADMINS
+from Vijay import ADMINS
 
 OWNER_ID = 2107036689
 DEV_USERS = 2107036689 

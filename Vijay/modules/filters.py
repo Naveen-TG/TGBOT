@@ -1,7 +1,3 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
 import io
 from pyrogram import filters, Client, enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
@@ -13,8 +9,8 @@ from database.filters_mdb import(
 )
 
 from database.connections_mdb import active_connection
-from utils import get_file_id, parser, split_quotes
-from info import ADMINS
+from Vijay import ADMINS
+from Vijay.utils import get_file_id, parser, split_quotes
 
 
 @Client.on_message(filters.command(['filter', 'add']) & filters.incoming)
